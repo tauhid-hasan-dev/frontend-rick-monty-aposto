@@ -3,7 +3,7 @@ import Locations from './components/lists/Locations';
 
 function App() {
   return (
-    <div className="App">
+    <div className="px-20">
       <Locations></Locations>
     </div>
   );
