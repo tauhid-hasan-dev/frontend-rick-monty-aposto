@@ -25,7 +25,7 @@ function Residents() {
             <div className='flex justify-center text-3xl font-bold p-5'>
                 Total Resident {residents.length}
             </div>
-            <div className='grid grid-cols-3 gap-10 pt-10 pb-20' >
+            <div className='grid grid-cols-3 gap-10 pt-10 pb-5' >
                 {
                     residentsObject.map((resident, idx) => <ResidentCard key={idx} resident={resident}></ResidentCard>)
                 }
