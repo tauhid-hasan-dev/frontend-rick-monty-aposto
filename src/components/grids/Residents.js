@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
+import ResidentCard from './ResidentCard';
 
 function Residents() {
     const data = useLoaderData();
@@ -7,7 +8,7 @@ function Residents() {
     const [residentsObject, setResidentsObject] = useState([])
     console.log(residentsObject);
 
-
+    //getting data for each resident and creating an array of object to map in the UI
     useEffect(() => {
         residents.map(resident => {
             return fetch(resident)
@@ -18,11 +19,17 @@ function Residents() {
         })
 
     }, [residents])
+
     return (
-        <div className='flex flex-col' >
-            {
-                residentsObject.map((resident, idx) => <div><span>{idx + 1}</span>{resident.name}</div>)
-            }
+        <div>
+            <div className='flex justify-center text-3xl font-bold p-5'>
+                Total Resident {residents.length}
+            </div>
+            <div className='grid grid-cols-3 gap-10 pt-10 pb-20' >
+                {
+                    residentsObject.map((resident, idx) => <ResidentCard key={idx} resident={resident}></ResidentCard>)
+                }
+            </div>
         </div>
     )
 }
