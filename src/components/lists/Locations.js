@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import LocationDetalis from './LocationDetalis';
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+
 
 const Locations = () => {
     const [locations, setLocations] = useState([]);
@@ -18,7 +20,7 @@ const Locations = () => {
         <div>
             <div className='flex justify-between py-8 px-5 lg:px-20 '>
                 {
-                    pageNumber === 1 || <button onClick={() => setPageNumber(pageNumber - 1)} className="btn  bg-[#F9F9F4] text-black hover:bg-[#e9e9dc] border-[#F9F9F4] hover:border-[#e9e9dc] shadow-md btn-sm">Prev</button>
+                    pageNumber === 1 || <button onClick={() => setPageNumber(pageNumber - 1)} className="btn  bg-[#F9F9F4] text-black hover:bg-[#e9e9dc] border-[#F9F9F4] hover:border-[#e9e9dc] shadow-md btn-sm"><span className='mr-1'> <FaAngleLeft></FaAngleLeft></span> Prev</button>
                 }
                 {
                     pageNumber === 1 && <button onClick={() => setPageNumber(7)} className="btn  bg-[#F9F9F4] text-black hover:bg-[#e9e9dc] border-[#F9F9F4] hover:border-[#e9e9dc] shadow-md btn-sm">Go to last page</button>
@@ -26,7 +28,7 @@ const Locations = () => {
 
                 <h1 className='text-2xl font-bold'>Locations</h1>
                 {
-                    pageNumber === 7 || <button onClick={() => setPageNumber(pageNumber + 1)} className="btn  bg-[#F9F9F4] text-black hover:bg-[#e9e9dc] border-[#F9F9F4] hover:border-[#e9e9dc] shadow-md btn-sm">Next</button>
+                    pageNumber === 7 || <button onClick={() => setPageNumber(pageNumber + 1)} className="btn  bg-[#F9F9F4] text-black hover:bg-[#e9e9dc] border-[#F9F9F4] hover:border-[#e9e9dc] shadow-md btn-sm">Next <span className='ml-2'><FaAngleRight></FaAngleRight></span></button>
                 }
                 {
                     pageNumber === 7 && <button onClick={() => setPageNumber(1)} className="btn  bg-[#F9F9F4] text-black hover:bg-[#e9e9dc] border-[#F9F9F4] hover:border-[#e9e9dc] shadow-md btn-sm">Go to first page</button>

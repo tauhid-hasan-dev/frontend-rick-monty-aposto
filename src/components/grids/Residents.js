@@ -22,8 +22,8 @@ function Residents() {
 
     return (
         <div>
-            <div className='flex justify-center text-3xl font-bold p-5'>
-                Resident Count {residents.length}
+            <div className='flex justify-center text-2xl font-bold p-5'>
+                Resident Count : {residents.length}
             </div>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10 pt-10 pb-20 lg:px-20 px-5 ' >
                 {
