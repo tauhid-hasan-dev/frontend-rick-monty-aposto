@@ -8,6 +8,7 @@ const Navbar = () => {
         <div>
             <div className="navbar bg-[#F9F9F4]  px-5 lg:px-20 ">
                 <div className="navbar-start">
+                    
                     <img className='w-[100px]' src="https://i.ibb.co/cgYPTtb/preview-image.png" alt="" />
 
                 </div>
