@@ -4,6 +4,7 @@ import LocationDetalis from './LocationDetalis';
 const Locations = () => {
     const [locations, setLocations] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
+
     console.log(pageNumber)
 
 
@@ -42,6 +43,7 @@ const Locations = () => {
                             <th>Name</th>
                             <th>Type</th>
                             <th>Dimension</th>
+                            <th>Total residents</th>
                         </tr>
                     </thead>
                     <tbody >
@@ -49,11 +51,6 @@ const Locations = () => {
                     </tbody>
                 </table>
             </div>
-
-
-
-
-
         </div>
     );
 };
