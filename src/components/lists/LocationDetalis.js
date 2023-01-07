@@ -4,13 +4,13 @@ function LocationDetalis({ location }) {
     const { id, name, type, dimension, residents } = location;
     return (
 
-        <tr>
+        <tr className='px-5 lg:px-20 '>
             <th className=' '>{id}</th>
-            <Link to={`/residents/${id}`}><td className='hover:bg-green-200'>{name}</td></Link>
+            <td className=' text-blue-500 hover:text-blue-700'><Link to={`/residents/${id}`}>{name}</Link></td>
             <td >{type}</td>
             <td >{dimension}</td>
             <td >{residents.length}</td>
-        </tr>
+        </tr >
 
 
     )
