@@ -14,7 +14,7 @@ const Navbar = () => {
                 <div className="navbar-center hidden lg:flex justify-center items-center text-center">
                     Rick and Monty Frontend Challenge
                 </div>
-                <div className="navbar-end font-bold gap-3">
+                <div className="navbar-end  gap-3">
                     Tauhid Hasan
                     <div className="flex gap-2">
                         <a href="https://github.com/tauhid-hasan-dev" target='blank'><SiGithub className='text-lg lg:text-[16px] text-slate-600 hover:text-text' ></SiGithub></a>

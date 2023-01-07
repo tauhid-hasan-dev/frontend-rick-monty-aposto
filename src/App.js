@@ -1,5 +1,4 @@
 import './App.css';
-import Locations from './components/lists/Locations';
 import {
   RouterProvider,
 } from "react-router-dom";
