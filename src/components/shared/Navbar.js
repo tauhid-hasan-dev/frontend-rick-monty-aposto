@@ -8,12 +8,12 @@ const Navbar = () => {
         <div>
             <div className="navbar bg-[#F9F9F4]  px-5 lg:px-20 ">
                 <div className="navbar-start">
-                    
+
                     <img className='w-[100px]' src="https://i.ibb.co/cgYPTtb/preview-image.png" alt="" />
 
                 </div>
                 <div className="navbar-center hidden lg:flex justify-center items-center text-center">
-                    Rick and Monty Frontend Challenge
+                    Rick and Morty Frontend Challenge
                 </div>
                 <div className="navbar-end  gap-3">
                     Tauhid Hasan

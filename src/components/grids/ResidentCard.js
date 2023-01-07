@@ -8,7 +8,7 @@ function ResidentCard({ resident }) {
 
 
     return (
-        <div className="card card-side bg-[#F9F9F4] text-black  text-white shadow-xl gap-3  ">
+        <div className="card card-side bg-[#F9F9F4] text-black   shadow-xl gap-3  ">
             <figure className='mr-3 w-[45%] h-full'><img src={image} alt="Movie" /></figure>
             <div className=" flex flex-col justify-between  py-5">
                 <div className='flex items-center gap-2'>
@@ -18,11 +18,11 @@ function ResidentCard({ resident }) {
                     <h2 className="card-title text-[18px]">{name}</h2>
                 </div>
 
-                <p className='text-sm'><span className='text-slate-600'>Status:</span> {status} </p>
-                <p className='text-sm'><span className='text-slate-600'>Type:</span> {type ? type : "Not Found"}</p>
-                <p className='text-sm'><span className='text-slate-600'>Gender:</span> {gender}</p>
-                <p className='text-sm'><span className='text-slate-600'>Origin:</span> {origin.name}</p>
-                <p className='text-sm'><span className='text-slate-600'>Species:</span> {species}</p>
+                <p className='text-sm'><span className='text-slate-600'>Status:</span> <span className='text-slate-900'>{status}</span> </p>
+                <p className='text-sm'><span className='text-slate-600'>Type:</span><span className='text-slate-900'>{type ? type : "Not Found"}</span> </p>
+                <p className='text-sm'><span className='text-slate-600'>Gender:</span> <span className='text-slate-900'>{gender}</span></p>
+                <p className='text-sm'><span className='text-slate-600'>Origin:</span> <span className='text-slate-900'>{origin.name}</span></p>
+                <p className='text-sm'><span className='text-slate-600'>Species:</span> <span className='text-slate-900'>{species}</span></p>
             </div>
         </div>
     )
